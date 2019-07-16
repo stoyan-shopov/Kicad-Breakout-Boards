@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Breakout Board STM32L041x6 - TSSOP20-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -241,82 +242,54 @@ Wire Notes Line
 Text Notes 4750 4250 0    50   ~ 0
 Power decoupling
 $Comp
-L Device:Crystal_Small Y?
-U 1 1 5D2D51AB
-P 6900 3950
-F 0 "Y?" H 6900 4175 50  0000 C CNN
-F 1 "Crystal_Small" H 7300 3950 50  0000 C CNN
-F 2 "" H 6900 3950 50  0001 C CNN
-F 3 "~" H 6900 3950 50  0001 C CNN
-	1    6900 3950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R?
 U 1 1 5D2D583C
-P 7000 3750
-F 0 "R?" H 7059 3796 50  0000 L CNN
-F 1 "R_Small" H 7059 3705 50  0000 L CNN
-F 2 "" H 7000 3750 50  0001 C CNN
-F 3 "~" H 7000 3750 50  0001 C CNN
-	1    7000 3750
+P 7850 3700
+F 0 "R?" H 7909 3746 50  0000 L CNN
+F 1 "R_Small" H 7909 3655 50  0000 L CNN
+F 2 "" H 7850 3700 50  0001 C CNN
+F 3 "~" H 7850 3700 50  0001 C CNN
+	1    7850 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 3650 7000 3550
-Wire Wire Line
-	6800 3950 6800 3550
-Wire Wire Line
-	7000 3850 7000 3950
-Wire Wire Line
-	7000 3950 7000 4050
-Connection ~ 7000 3950
-Wire Wire Line
-	6800 3950 6800 4050
-Connection ~ 6800 3950
+	7850 3600 7850 3500
 $Comp
 L Device:C_Small C?
 U 1 1 5D2D7D40
-P 6800 4150
-F 0 "C?" H 6700 4250 50  0000 L CNN
-F 1 "6pF" H 6600 4050 50  0000 L CNN
-F 2 "" H 6800 4150 50  0001 C CNN
-F 3 "~" H 6800 4150 50  0001 C CNN
-	1    6800 4150
+P 7450 4100
+F 0 "C?" H 7350 4200 50  0000 L CNN
+F 1 "6pF" H 7250 4000 50  0000 L CNN
+F 2 "" H 7450 4100 50  0001 C CNN
+F 3 "~" H 7450 4100 50  0001 C CNN
+	1    7450 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5D2D7D8C
-P 7000 4150
-F 0 "C?" H 6900 4250 50  0000 L CNN
-F 1 "6pF" H 7050 4050 50  0000 L CNN
-F 2 "" H 7000 4150 50  0001 C CNN
-F 3 "~" H 7000 4150 50  0001 C CNN
-	1    7000 4150
+P 7850 4100
+F 0 "C?" H 7750 4200 50  0000 L CNN
+F 1 "6pF" H 7900 4000 50  0000 L CNN
+F 2 "" H 7850 4100 50  0001 C CNN
+F 3 "~" H 7850 4100 50  0001 C CNN
+	1    7850 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 4250 6900 4250
-Wire Wire Line
-	6900 4250 6900 4300
-Connection ~ 6900 4250
-Wire Wire Line
-	6900 4250 7000 4250
 $Comp
 L power:GND #PWR?
 U 1 1 5D2D915B
-P 6900 4300
-F 0 "#PWR?" H 6900 4050 50  0001 C CNN
-F 1 "GND" H 6905 4127 50  0000 C CNN
-F 2 "" H 6900 4300 50  0001 C CNN
-F 3 "" H 6900 4300 50  0001 C CNN
-	1    6900 4300
+P 7650 4250
+F 0 "#PWR?" H 7650 4000 50  0001 C CNN
+F 1 "GND" H 7655 4077 50  0000 C CNN
+F 2 "" H 7650 4250 50  0001 C CNN
+F 3 "" H 7650 4250 50  0001 C CNN
+	1    7650 4250
 	1    0    0    -1  
 $EndComp
-Text Label 7000 3550 0    50   ~ 0
+Text Label 7850 3500 0    50   ~ 0
 osc32out
-Text Label 6800 3550 2    50   ~ 0
+Text Label 7450 3500 2    50   ~ 0
 osc32in
 Text Label 4500 2650 0    50   ~ 0
 nrst
@@ -375,4 +348,213 @@ F 3 "" H 2850 4100 50  0001 C CNN
 	1    2850 4100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Crystal_GND2 Y?
+U 1 1 5D2DE877
+P 7650 3900
+F 0 "Y?" H 7650 4168 50  0000 C CNN
+F 1 "Crystal_GND2" H 7650 4077 50  0000 C CNN
+F 2 "" H 7650 3900 50  0001 C CNN
+F 3 "~" H 7650 3900 50  0001 C CNN
+	1    7650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3500 7450 3900
+Wire Wire Line
+	7850 3800 7850 3900
+Wire Wire Line
+	7650 4200 7650 4250
+Wire Wire Line
+	7450 4200 7650 4200
+Wire Wire Line
+	7650 4200 7850 4200
+Connection ~ 7650 4200
+Wire Wire Line
+	7800 3900 7850 3900
+Connection ~ 7850 3900
+Wire Wire Line
+	7850 3900 7850 4000
+Wire Wire Line
+	7650 4100 7650 4200
+Wire Wire Line
+	7500 3900 7450 3900
+Connection ~ 7450 3900
+Wire Wire Line
+	7450 3900 7450 4000
+Text Label 6200 2450 0    50   ~ 0
+swdio
+Text Label 6200 2350 0    50   ~ 0
+swclk
+Text Label 6200 2550 0    50   ~ 0
+led
+Wire Wire Line
+	6050 3600 6000 3600
+Wire Wire Line
+	6000 3600 6000 3650
+$Comp
+L Device:LED_Small D?
+U 1 1 5D2DC45D
+P 6000 3750
+F 0 "D?" V 6046 3682 50  0000 R CNN
+F 1 "LED_Small" V 5955 3682 50  0000 R CNN
+F 2 "" V 6000 3750 50  0001 C CNN
+F 3 "~" V 6000 3750 50  0001 C CNN
+	1    6000 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D2DC532
+P 6000 4000
+F 0 "R?" H 6059 4046 50  0000 L CNN
+F 1 "R_Small" H 6059 3955 50  0000 L CNN
+F 2 "" H 6000 4000 50  0001 C CNN
+F 3 "~" H 6000 4000 50  0001 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D2DC5A6
+P 6000 4150
+F 0 "#PWR?" H 6000 3900 50  0001 C CNN
+F 1 "GND" H 6005 3977 50  0000 C CNN
+F 2 "" H 6000 4150 50  0001 C CNN
+F 3 "" H 6000 4150 50  0001 C CNN
+	1    6000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4100 6000 4150
+Wire Wire Line
+	6000 3850 6000 3900
+Wire Wire Line
+	6450 3600 6400 3600
+Wire Wire Line
+	6400 3600 6400 3650
+$Comp
+L Device:LED_Small D?
+U 1 1 5D2E1973
+P 6400 3750
+F 0 "D?" V 6446 3682 50  0000 R CNN
+F 1 "LED_Small" V 6355 3682 50  0000 R CNN
+F 2 "" V 6400 3750 50  0001 C CNN
+F 3 "~" V 6400 3750 50  0001 C CNN
+	1    6400 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D2E1979
+P 6400 4000
+F 0 "R?" H 6459 4046 50  0000 L CNN
+F 1 "R_Small" H 6459 3955 50  0000 L CNN
+F 2 "" H 6400 4000 50  0001 C CNN
+F 3 "~" H 6400 4000 50  0001 C CNN
+	1    6400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D2E197F
+P 6400 4150
+F 0 "#PWR?" H 6400 3900 50  0001 C CNN
+F 1 "GND" H 6405 3977 50  0000 C CNN
+F 2 "" H 6400 4150 50  0001 C CNN
+F 3 "" H 6400 4150 50  0001 C CNN
+	1    6400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4100 6400 4150
+Wire Wire Line
+	6400 3850 6400 3900
+Text Label 6050 3600 0    50   ~ 0
+vdd
+Text Label 6450 3600 0    50   ~ 0
+led
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D2E3AC6
+P 7700 2450
+F 0 "TP?" V 7750 2450 50  0000 C CNN
+F 1 "TestPoint swclk" V 7700 2950 50  0000 C CNN
+F 2 "" H 7900 2450 50  0001 C CNN
+F 3 "~" H 7900 2450 50  0001 C CNN
+	1    7700 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 2450 7800 2450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D2E5C16
+P 7700 2550
+F 0 "TP?" V 7750 2550 50  0000 C CNN
+F 1 "TestPoint swdio" V 7700 3050 50  0000 C CNN
+F 2 "" H 7900 2550 50  0001 C CNN
+F 3 "~" H 7900 2550 50  0001 C CNN
+	1    7700 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 2550 7800 2550
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D2E6D12
+P 7700 2650
+F 0 "TP?" V 7750 2650 50  0000 C CNN
+F 1 "TestPoint vdd" V 7700 3100 50  0000 C CNN
+F 2 "" H 7900 2650 50  0001 C CNN
+F 3 "~" H 7900 2650 50  0001 C CNN
+	1    7700 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 2650 7800 2650
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5D2E6D19
+P 7700 2750
+F 0 "TP?" V 7750 2750 50  0000 C CNN
+F 1 "TestPoint gnd" V 7700 3200 50  0000 C CNN
+F 2 "" H 7900 2750 50  0001 C CNN
+F 3 "~" H 7900 2750 50  0001 C CNN
+	1    7700 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 2750 7800 2750
+Text Label 7800 2450 0    50   ~ 0
+swdio
+Text Label 7800 2550 0    50   ~ 0
+swclk
+Text Label 7800 2650 0    50   ~ 0
+vddext
+Text Label 7800 2750 0    50   ~ 0
+gnd
+$Comp
+L Device:D_Schottky D?
+U 1 1 5D2E89DD
+P 8450 2700
+F 0 "D?" V 8496 2621 50  0000 R CNN
+F 1 "D_Schottky" V 8405 2621 50  0000 R CNN
+F 2 "" H 8450 2700 50  0001 C CNN
+F 3 "~" H 8450 2700 50  0001 C CNN
+	1    8450 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8450 2550 8450 2500
+Wire Wire Line
+	8450 2500 8500 2500
+Wire Wire Line
+	8450 2850 8450 2900
+Wire Wire Line
+	8450 2900 8500 2900
+Text Label 8500 2900 0    50   ~ 0
+vdd
+Text Label 8500 2500 0    50   ~ 0
+vddext
 $EndSCHEMATC
