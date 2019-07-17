@@ -31,7 +31,7 @@ U 1 1 5D2D186C
 P 4250 2850
 F 0 "J1" H 4170 2125 50  0000 C CNN
 F 1 "Conn_01x10" H 4170 2216 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 4250 2850 50  0001 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:PinHeader 1x10 P2.54mm Vertical" H 4250 2850 50  0001 C CNN
 F 3 "~" H 4250 2850 50  0001 C CNN
 	1    4250 2850
 	-1   0    0    1   
@@ -42,7 +42,7 @@ U 1 1 5D2D18EC
 P 6600 2750
 F 0 "J2" H 6680 2742 50  0000 L CNN
 F 1 "Conn_01x10" H 6680 2651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6600 2750 50  0001 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:PinHeader 1x10 P2.54mm Vertical" H 6600 2750 50  0001 C CNN
 F 3 "~" H 6600 2750 50  0001 C CNN
 	1    6600 2750
 	1    0    0    -1  
@@ -382,7 +382,7 @@ Text Label 6200 2450 0    50   ~ 0
 swdio
 Text Label 6200 2350 0    50   ~ 0
 swclk
-Text Label 6200 2550 0    50   ~ 0
+Text Label 6200 3250 0    50   ~ 0
 led
 Wire Wire Line
 	6050 3600 6000 3600
@@ -559,4 +559,110 @@ Wire Wire Line
 	4750 2550 4550 2550
 NoConn ~ 4450 2450
 NoConn ~ 4450 2550
+Wire Wire Line
+	3600 3050 3550 3050
+Wire Wire Line
+	3550 3050 3550 3150
+$Comp
+L power:GND #PWR09
+U 1 1 5D2EEAAE
+P 3550 3150
+F 0 "#PWR09" H 3550 2900 50  0001 C CNN
+F 1 "GND" H 3555 2977 50  0000 C CNN
+F 2 "" H 3550 3150 50  0001 C CNN
+F 3 "" H 3550 3150 50  0001 C CNN
+	1    3550 3150
+	1    0    0    -1  
+$EndComp
+Text Label 3600 3050 0    50   ~ 0
+gnd
+Wire Wire Line
+	5350 1900 5550 1900
+Text Label 5550 1900 0    50   ~ 0
+vdd
+Text Label 5350 1900 2    50   ~ 0
+vdda
+Text Label 4500 3250 0    50   ~ 0
+button
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5D2F6274
+P 2550 2600
+F 0 "SW2" V 2600 2850 50  0000 R CNN
+F 1 "SW_Push" V 2700 3000 50  0000 R CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:Tactile Switch TS-064 - Comet" H 2550 2800 50  0001 C CNN
+F 3 "" H 2550 2800 50  0001 C CNN
+	1    2550 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5D2F6280
+P 2750 2800
+F 0 "#PWR08" H 2750 2550 50  0001 C CNN
+F 1 "GND" H 2755 2627 50  0000 C CNN
+F 2 "" H 2750 2800 50  0001 C CNN
+F 3 "" H 2750 2800 50  0001 C CNN
+	1    2750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5D2F82A4
+P 2800 2400
+F 0 "R5" V 2600 2300 50  0000 L CNN
+F 1 "R_Small" V 2700 2200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2800 2400 50  0001 C CNN
+F 3 "~" H 2800 2400 50  0001 C CNN
+	1    2800 2400
+	0    1    1    0   
+$EndComp
+Text Label 3100 2400 0    50   ~ 0
+button
+$Comp
+L Device:R_Small R6
+U 1 1 5D305710
+P 2950 2200
+F 0 "R6" H 3009 2246 50  0000 L CNN
+F 1 "R_Small" H 3009 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2950 2200 50  0001 C CNN
+F 3 "~" H 2950 2200 50  0001 C CNN
+	1    2950 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2100 2950 2050
+Text Label 3000 2050 0    50   ~ 0
+vdd
+Wire Wire Line
+	3000 2050 2950 2050
+$Comp
+L Device:C_Small C8
+U 1 1 5D3109EF
+P 2950 2600
+F 0 "C8" H 3042 2646 50  0000 L CNN
+F 1 "???F" H 3042 2555 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2950 2600 50  0001 C CNN
+F 3 "~" H 2950 2600 50  0001 C CNN
+	1    2950 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2300 2950 2400
+Wire Wire Line
+	2550 2400 2700 2400
+Wire Wire Line
+	2900 2400 2950 2400
+Connection ~ 2950 2400
+Wire Wire Line
+	2550 2800 2750 2800
+Wire Wire Line
+	2950 2400 3100 2400
+Wire Wire Line
+	2950 2500 2950 2400
+Wire Wire Line
+	2950 2700 2950 2800
+Connection ~ 2750 2800
+Wire Wire Line
+	2750 2800 2950 2800
 $EndSCHEMATC
