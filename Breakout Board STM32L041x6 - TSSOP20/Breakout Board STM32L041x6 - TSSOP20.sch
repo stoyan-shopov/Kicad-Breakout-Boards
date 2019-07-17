@@ -371,8 +371,8 @@ Text Label 6500 3300 0    50   ~ 0
 swdio
 Text Label 6500 3200 0    50   ~ 0
 swclk
-Text Label 6500 4100 0    50   ~ 0
-led
+Text Label 6400 4100 0    50   ~ 0
+goldstar
 Wire Wire Line
 	1800 3150 1750 3150
 Wire Wire Line
@@ -423,7 +423,7 @@ L Device:LED_Small D2
 U 1 1 5D2E1973
 P 2150 3300
 F 0 "D2" V 2196 3232 50  0000 R CNN
-F 1 "user led" V 2105 3232 50  0000 R CNN
+F 1 "goldstar" V 2105 3232 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2150 3300 50  0001 C CNN
 F 3 "~" V 2150 3300 50  0001 C CNN
 	1    2150 3300
@@ -458,7 +458,7 @@ Wire Wire Line
 Text Label 1800 3150 0    50   ~ 0
 vdd
 Text Label 2200 3150 0    50   ~ 0
-led
+goldstar
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5D2E3AC6
@@ -553,14 +553,14 @@ Text Label 6550 4800 0    50   ~ 0
 vdd
 Text Label 6450 4800 2    50   ~ 0
 vdda
-Text Label 4800 4100 0    50   ~ 0
-switch
+Text Label 4750 4100 0    50   ~ 0
+ibm-m
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5D2F6274
 P 2750 3650
 F 0 "SW2" V 2800 3900 50  0000 R CNN
-F 1 "user switch" V 2950 4100 50  0000 R CNN
+F 1 "ibm m" V 2900 3950 50  0000 R CNN
 F 2 "Breakout Board STM32L041x6 - TSSOP20:Tactile Switch TS-064 - Comet" H 2750 3850 50  0001 C CNN
 F 3 "" H 2750 3850 50  0001 C CNN
 	1    2750 3650
@@ -589,7 +589,7 @@ F 3 "~" H 3000 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 3300 3450 0    50   ~ 0
-switch
+ibm-m
 $Comp
 L Device:R_Small R6
 U 1 1 5D305710
@@ -744,4 +744,62 @@ Text Label 6500 3500 0    50   ~ 0
 pa9
 Text Label 6500 3400 0    50   ~ 0
 pa10
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5D2F9664
+P 8550 1750
+F 0 "TP5" V 8600 1750 50  0000 C CNN
+F 1 "x1" V 8550 2050 50  0000 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round" H 8750 1750 50  0001 C CNN
+F 3 "~" H 8750 1750 50  0001 C CNN
+	1    8550 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5D2F966A
+P 8550 1850
+F 0 "TP6" V 8600 1850 50  0000 C CNN
+F 1 "x2" V 8550 2150 50  0000 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round" H 8750 1850 50  0001 C CNN
+F 3 "~" H 8750 1850 50  0001 C CNN
+	1    8550 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5D2FC439
+P 8550 1950
+F 0 "TP7" V 8600 1950 50  0000 C CNN
+F 1 "x3" V 8550 2250 50  0000 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round" H 8750 1950 50  0001 C CNN
+F 3 "~" H 8750 1950 50  0001 C CNN
+	1    8550 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5D2FC43F
+P 8550 2050
+F 0 "TP8" V 8600 2050 50  0000 C CNN
+F 1 "x4" V 8550 2350 50  0000 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round" H 8750 2050 50  0001 C CNN
+F 3 "~" H 8750 2050 50  0001 C CNN
+	1    8550 2050
+	0    -1   -1   0   
+$EndComp
+Text Notes 8200 1600 0    50   ~ 0
+Bypass shaft
+Wire Notes Line
+	8150 1500 8750 1500
+Wire Notes Line
+	8750 1500 8750 2100
+Wire Notes Line
+	8750 2100 8150 2100
+Wire Notes Line
+	8150 2100 8150 1500
+NoConn ~ 8550 1750
+NoConn ~ 8550 1850
+NoConn ~ 8550 1950
+NoConn ~ 8550 2050
 $EndSCHEMATC

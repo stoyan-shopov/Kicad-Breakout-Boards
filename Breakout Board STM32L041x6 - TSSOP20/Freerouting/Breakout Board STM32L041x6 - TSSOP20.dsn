@@ -1,4 +1,4 @@
-(pcb "C:\src\Kicad Breakout Boards\Breakout Board STM32L041x6 - TSSOP20\Freerouting\Breakout Board STM32L041x6 - TSSOP20.dsn"
+(pcb "C:\src\Kicad-Breakout-Boards\Breakout Board STM32L041x6 - TSSOP20\Freerouting\Breakout Board STM32L041x6 - TSSOP20.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -21,12 +21,12 @@
       )
     )
     (boundary
-      (path pcb 0  139700 -66040  140481 -66512.5  141176 -67103.9  141768 -67799.1
-            142240 -68580  142240 -96520  141768 -97300.9  141176 -97996.1
-            140481 -98587.5  139700 -99060  137160 -99060  109220 -99060
-            108439 -98587.5  107744 -97996.1  107152 -97300.9  106680 -96520
-            106680 -68580  106680 -68580  107152 -67799.1  107744 -67103.9
-            108439 -66512.5  109220 -66040  137160 -66040  139700 -66040)
+      (path pcb 0  147320 -58420  148101 -58892.5  148796 -59483.9  149388 -60179.1
+            149860 -60960  149860 -88900  149388 -89680.9  148796 -90376.1
+            148101 -90967.5  147320 -91440  144780 -91440  116840 -91440
+            116059 -90967.5  115364 -90376.1  114772 -89680.9  114300 -88900
+            114300 -60960  114300 -60960  114772 -60179.1  115364 -59483.9
+            116059 -58892.5  116840 -58420  144780 -58420  147320 -58420)
     )
     (via "Via[0-1]_800:400_um")
     (rule
@@ -38,59 +38,59 @@
   )
   (placement
     (component "Breakout Board STM32L041x6 - TSSOP20:Crystal 32768 Hz Citizen - CMR200T32.768KDZB-UT"
-      (place Y1 128375 -80750 back 0 (PN Crystal_GND2))
+      (place Y1 135995 -73130 back 0 (PN "Crystal 32768"))
     )
     (component Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-      (place C1 115775 -78250 back 180 (PN 100nF))
-      (place C3 119000 -81225 front 90 (PN 100nF))
-      (place C5 130250 -83025 front 270 (PN 100nF))
-      (place C6 121000 -78725 back 270 (PN 6pF))
-      (place C8 115000 -95225 front 270 (PN ???F))
+      (place C1 123395 -70630 back 180 (PN 100nF))
+      (place C3 126620 -73605 front 90 (PN 100nF))
+      (place C5 137870 -75405 front 270 (PN 100nF))
+      (place C6 128620 -71105 back 270 (PN 6pF))
+      (place C8 122620 -87605 front 270 (PN 100nF))
     )
     (component Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder::1
-      (place C2 117000 -81225 front 90 (PN 1uF))
-      (place C4 132500 -83025 front 270 (PN 10uF))
-      (place C7 118750 -83025 back 90 (PN 6pF))
+      (place C2 124620 -73605 front 90 (PN 1uF))
+      (place C4 140120 -75405 front 270 (PN 10uF))
+      (place C7 126370 -75405 back 90 (PN 6pF))
     )
     (component LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder
-      (place D1 114750 -81762.5 front 270 (PN LED_Small))
+      (place D1 122370 -74142.5 front 270 (PN "led - power"))
     )
     (component LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder::1
-      (place D2 130250 -90262.5 front 90 (PN LED_Small))
+      (place D2 137870 -82642.5 front 90 (PN "user led"))
     )
     (component "Diode_SMD:D_SOD-123"
-      (place D3 132500 -85850 back 90 (PN D_Schottky))
+      (place D3 140620 -78730 back 90 (PN Dvddext))
     )
     (component Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-      (place R1 115775 -71000 back 180 (PN R_Small))
-      (place R4 121000 -83025 back 90 (PN R_Small))
+      (place R1 123395 -63380 back 180 (PN 100k))
+      (place R4 128620 -75405 back 90 (PN Rxtal))
     )
     (component Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder::1
-      (place R2 115775 -78250 front 0 (PN R_Small))
-      (place R3 130250 -95025 front 270 (PN R_Small))
-      (place R5 115000 -95275 back 90 (PN R_Small))
-      (place R6 115000 -91275 back 90 (PN R_Small))
+      (place R2 123395 -70630 front 0 (PN Rled))
+      (place R3 137870 -87405 front 270 (PN Rled))
+      (place R5 122620 -87655 back 90 (PN 1k))
+      (place R6 122620 -83655 back 90 (PN 10k))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:Tactile Switch TS-064 - Comet"
-      (place SW1 124250 -71500 front 90 (PN SW_Push))
-      (place SW2 122500 -93250 front 90 (PN SW_Push))
+      (place SW1 131870 -63880 front 90 (PN "reset switch"))
+      (place SW2 130120 -85630 front 90 (PN "user switch"))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round"
-      (place TP1 132080 -73660 front 0 (PN "TestPoint swclk"))
-      (place TP2 132080 -71120 front 0 (PN "TestPoint swdio"))
-      (place TP3 132750 -94250 front 0 (PN "TestPoint vdd"))
+      (place TP1 139700 -66040 front 0 (PN swdio))
+      (place TP2 139700 -63500 front 0 (PN swclk))
+      (place TP3 140970 -86360 front 0 (PN vddext))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm square"
-      (place TP4 132080 -76200 front 0 (PN "TestPoint gnd"))
+      (place TP4 139700 -68580 front 0 (PN gnd))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:STM32L041x6 - TSSOP20"
-      (place U1 124125 -82925 front 270 (PN "STM32L041x6-TSSOP20"))
+      (place U1 131745 -75305 front 270 (PN STM32L041F6P7))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:PinHeader 1x10 P2.54mm Vertical"
-      (place J1 111760 -93980 front 180 (PN Conn_01x10))
+      (place J1 119380 -86360 front 180 (PN Conn_01x10))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:PinHeader 1x10 P2.54mm Vertical::1"
-      (place J2 137160 -71120 front 0 (PN Conn_01x10))
+      (place J2 144780 -63500 front 0 (PN Conn_01x10))
     )
   )
   (library
@@ -413,7 +413,7 @@
     )
     (net GND
       (pins Y1-2 C1-2 C2-2 C3-2 C4-2 C5-2 C6-2 C7-2 R1-2 R2-2 R3-2 SW1-1 SW1-1@1 TP4-1
-        U1-15 SW2-1 SW2-1@1 J2-6 C8-2)
+        U1-15 SW2-1 SW2-1@1 J1-9 J2-6 C8-2)
     )
     (net /vdd
       (pins C2-1 C3-1 C4-1 C5-1 D1-2 D3-1 U1-5 U1-16 J1-6 J2-5 R6-1)
@@ -439,59 +439,54 @@
     (net /boot
       (pins R1-1 U1-1 J1-10)
     )
-    (net "Net-(J1-Pad9)"
-      (pins J1-9)
-    )
-    (net "Net-(J1-Pad8)"
-      (pins J1-8)
-    )
-    (net "Net-(J1-Pad5)"
-      (pins U1-6 J1-5)
-    )
-    (net "Net-(J1-Pad4)"
-      (pins U1-7 J1-4)
-    )
-    (net "Net-(J1-Pad3)"
-      (pins U1-8 J1-3)
-    )
-    (net "Net-(J1-Pad2)"
-      (pins U1-9 J1-2)
-    )
     (net /swclk
       (pins TP2-1 U1-20 J2-1)
     )
     (net /swdio
       (pins TP1-1 U1-19 J2-2)
     )
-    (net "Net-(J2-Pad4)"
-      (pins U1-17 J2-4)
-    )
-    (net "Net-(J2-Pad7)"
-      (pins U1-14 J2-7)
-    )
-    (net "Net-(J2-Pad8)"
-      (pins U1-13 J2-8)
-    )
-    (net "Net-(J2-Pad9)"
-      (pins U1-12 J2-9)
-    )
     (net /osc32out
       (pins R4-1 U1-3)
-    )
-    (net /button
-      (pins U1-10 R5-1 J1-1 C8-1 R6-2)
-    )
-    (net "Net-(J2-Pad3)"
-      (pins U1-18 J2-3)
     )
     (net "Net-(R5-Pad2)"
       (pins SW2-2 SW2-2@1 R5-2)
     )
-    (class kicad_default "" /boot /button /led /nrst /osc32in /osc32out /swclk
-      /swdio /vdd /vddext GND "Net-(C7-Pad1)" "Net-(D1-Pad1)" "Net-(D2-Pad1)"
-      "Net-(J1-Pad2)" "Net-(J1-Pad3)" "Net-(J1-Pad4)" "Net-(J1-Pad5)" "Net-(J1-Pad8)"
-      "Net-(J1-Pad9)" "Net-(J2-Pad3)" "Net-(J2-Pad4)" "Net-(J2-Pad7)" "Net-(J2-Pad8)"
-      "Net-(J2-Pad9)" "Net-(R5-Pad2)"
+    (net /key
+      (pins J1-8)
+    )
+    (net /switch
+      (pins U1-10 R5-1 J1-1 C8-1 R6-2)
+    )
+    (net /pa3
+      (pins U1-9 J1-2)
+    )
+    (net /pa2
+      (pins U1-8 J1-3)
+    )
+    (net /pa1
+      (pins U1-7 J1-4)
+    )
+    (net /pa0
+      (pins U1-6 J1-5)
+    )
+    (net /pa6
+      (pins U1-12 J2-9)
+    )
+    (net /pa7
+      (pins U1-13 J2-8)
+    )
+    (net /pb1
+      (pins U1-14 J2-7)
+    )
+    (net /pa9
+      (pins U1-17 J2-4)
+    )
+    (net /pa10
+      (pins U1-18 J2-3)
+    )
+    (class kicad_default "" /boot /key /led /nrst /osc32in /osc32out /pa0
+      /pa1 /pa10 /pa2 /pa3 /pa6 /pa7 /pa9 /pb1 /swclk /swdio /switch /vdd
+      /vddext GND "Net-(C7-Pad1)" "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(R5-Pad2)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
@@ -502,34 +497,34 @@
     )
   )
   (wiring
-    (wire (path B.Cu 250  132250 -79250  132250 -80750)(net GND)(type protect))
-    (wire (path B.Cu 250  130700 -77700  132250 -79250)(net GND)(type protect))
-    (wire (path B.Cu 250  121000 -77700  130700 -77700)(net GND)(type protect))
-    (wire (path B.Cu 250  119373 -84673.4  118750 -84050)(net GND)(type protect))
-    (wire (path B.Cu 250  119700 -85000  119373 -84673.4)(net GND)(type protect))
-    (wire (path B.Cu 250  129500 -85000  119700 -85000)(net GND)(type protect))
-    (wire (path B.Cu 250  132250 -82250  129500 -85000)(net GND)(type protect))
-    (wire (path B.Cu 250  132250 -80750  132250 -82250)(net GND)(type protect))
-    (wire (path B.Cu 250  116800 -82100  116800 -78250)(net GND)(type protect))
-    (wire (path B.Cu 250  118750 -84050  116800 -82100)(net GND)(type protect))
-    (wire (path B.Cu 250  120450 -78250  121000 -77700)(net GND)(type protect))
-    (wire (path B.Cu 250  116800 -78250  120450 -78250)(net GND)(type protect))
-    (wire (path B.Cu 250  124250 -79750  124500 -79500)(net /osc32in)(type protect))
-    (wire (path F.Cu 250  122573 -80252.4  122573 -79743.7)(net /osc32in)(type protect))
-    (wire (path F.Cu 250  122175 -80650  122573 -80252.4)(net /osc32in)(type protect))
-    (wire (path F.Cu 250  121250 -80650  122175 -80650)(net /osc32in)(type protect))
-    (wire (path B.Cu 250  121000 -79750  122573 -79743.7  124250 -79750)(net /osc32in)(type protect))
-    (wire (path B.Cu 250  123750 -82000  124500 -82000)(net "Net-(C7-Pad1)")(type protect))
-    (wire (path B.Cu 250  122323 -83426.6  123750 -82000)(net "Net-(C7-Pad1)")(type protect))
-    (wire (path B.Cu 250  121623 -83426.6  122323 -83426.6)(net "Net-(C7-Pad1)")(type protect))
-    (wire (path B.Cu 250  121000 -84050  121623 -83426.6)(net "Net-(C7-Pad1)")(type protect))
-    (wire (path B.Cu 250  120800 -84050  121000 -84050)(net "Net-(C7-Pad1)")(type protect))
-    (wire (path B.Cu 250  118750 -82000  120800 -84050)(net "Net-(C7-Pad1)")(type protect))
-    (wire (path B.Cu 250  121250 -81750  121000 -82000)(net /osc32out)(type protect))
-    (wire (path F.Cu 250  122575 -81700  122575 -82000)(net /osc32out)(type protect))
-    (wire (path F.Cu 250  121250 -81300  122175 -81300  122575 -81700)(net /osc32out)(type protect))
-    (wire (path B.Cu 250  122575 -82000  121000 -82000)(net /osc32out)(type protect))
-    (via "Via[0-1]_800:400_um"  122573 -79743.7 (net /osc32in)(type protect))
-    (via "Via[0-1]_800:400_um"  122575 -82000 (net /osc32out)(type protect))
+    (wire (path B.Cu 250  139870 -71630  139870 -73130)(net GND)(type protect))
+    (wire (path B.Cu 250  138320 -70080  139870 -71630)(net GND)(type protect))
+    (wire (path B.Cu 250  128620 -70080  138320 -70080)(net GND)(type protect))
+    (wire (path B.Cu 250  126993 -77053.4  126370 -76430)(net GND)(type protect))
+    (wire (path B.Cu 250  127320 -77380  126993 -77053.4)(net GND)(type protect))
+    (wire (path B.Cu 250  137120 -77380  127320 -77380)(net GND)(type protect))
+    (wire (path B.Cu 250  139870 -74630  137120 -77380)(net GND)(type protect))
+    (wire (path B.Cu 250  139870 -73130  139870 -74630)(net GND)(type protect))
+    (wire (path B.Cu 250  124420 -74480  124420 -70630)(net GND)(type protect))
+    (wire (path B.Cu 250  126370 -76430  124420 -74480)(net GND)(type protect))
+    (wire (path B.Cu 250  128070 -70630  128620 -70080)(net GND)(type protect))
+    (wire (path B.Cu 250  124420 -70630  128070 -70630)(net GND)(type protect))
+    (wire (path B.Cu 250  131870 -72130  132120 -71880)(net /osc32in)(type protect))
+    (wire (path F.Cu 250  130193 -72632.4  130193 -72123.7)(net /osc32in)(type protect))
+    (wire (path F.Cu 250  129795 -73030  130193 -72632.4)(net /osc32in)(type protect))
+    (wire (path F.Cu 250  128870 -73030  129795 -73030)(net /osc32in)(type protect))
+    (wire (path B.Cu 250  128620 -72130  130193 -72123.7  131870 -72130)(net /osc32in)(type protect))
+    (wire (path B.Cu 250  131370 -74380  132120 -74380)(net "Net-(C7-Pad1)")(type protect))
+    (wire (path B.Cu 250  129943 -75806.6  131370 -74380)(net "Net-(C7-Pad1)")(type protect))
+    (wire (path B.Cu 250  129243 -75806.6  129943 -75806.6)(net "Net-(C7-Pad1)")(type protect))
+    (wire (path B.Cu 250  128620 -76430  129243 -75806.6)(net "Net-(C7-Pad1)")(type protect))
+    (wire (path B.Cu 250  128420 -76430  128620 -76430)(net "Net-(C7-Pad1)")(type protect))
+    (wire (path B.Cu 250  126370 -74380  128420 -76430)(net "Net-(C7-Pad1)")(type protect))
+    (wire (path B.Cu 250  128870 -74130  128620 -74380)(net /osc32out)(type protect))
+    (wire (path F.Cu 250  130195 -74080  130195 -74380)(net /osc32out)(type protect))
+    (wire (path F.Cu 250  128870 -73680  129795 -73680  130195 -74080)(net /osc32out)(type protect))
+    (wire (path B.Cu 250  130195 -74380  128620 -74380)(net /osc32out)(type protect))
+    (via "Via[0-1]_800:400_um"  130193 -72123.7 (net /osc32in)(type protect))
+    (via "Via[0-1]_800:400_um"  130195 -74380 (net /osc32out)(type protect))
   )
 )

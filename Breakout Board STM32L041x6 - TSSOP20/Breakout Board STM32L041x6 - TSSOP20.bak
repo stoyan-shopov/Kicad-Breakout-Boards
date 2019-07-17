@@ -382,7 +382,7 @@ L Device:LED_Small D1
 U 1 1 5D2DC45D
 P 1750 3300
 F 0 "D1" V 1700 3250 50  0000 R CNN
-F 1 "led power" V 1850 3250 50  0000 R CNN
+F 1 "led - power" V 2000 3400 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1750 3300 50  0001 C CNN
 F 3 "~" V 1750 3300 50  0001 C CNN
 	1    1750 3300
@@ -744,4 +744,62 @@ Text Label 6500 3500 0    50   ~ 0
 pa9
 Text Label 6500 3400 0    50   ~ 0
 pa10
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5D2F9664
+P 8550 1750
+F 0 "TP5" V 8600 1750 50  0000 C CNN
+F 1 "x1" V 8550 2050 50  0000 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round" H 8750 1750 50  0001 C CNN
+F 3 "~" H 8750 1750 50  0001 C CNN
+	1    8550 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5D2F966A
+P 8550 1850
+F 0 "TP6" V 8600 1850 50  0000 C CNN
+F 1 "x2" V 8550 2150 50  0000 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round" H 8750 1850 50  0001 C CNN
+F 3 "~" H 8750 1850 50  0001 C CNN
+	1    8550 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5D2FC439
+P 8550 1950
+F 0 "TP7" V 8600 1950 50  0000 C CNN
+F 1 "x3" V 8550 2250 50  0000 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round" H 8750 1950 50  0001 C CNN
+F 3 "~" H 8750 1950 50  0001 C CNN
+	1    8550 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5D2FC43F
+P 8550 2050
+F 0 "TP8" V 8600 2050 50  0000 C CNN
+F 1 "x4" V 8550 2350 50  0000 C CNN
+F 2 "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round" H 8750 2050 50  0001 C CNN
+F 3 "~" H 8750 2050 50  0001 C CNN
+	1    8550 2050
+	0    -1   -1   0   
+$EndComp
+Text Notes 8200 1600 0    50   ~ 0
+Bypass shaft
+Wire Notes Line
+	8150 1500 8750 1500
+Wire Notes Line
+	8750 1500 8750 2100
+Wire Notes Line
+	8750 2100 8150 2100
+Wire Notes Line
+	8150 2100 8150 1500
+NoConn ~ 8550 1750
+NoConn ~ 8550 1850
+NoConn ~ 8550 1950
+NoConn ~ 8550 2050
 $EndSCHEMATC
