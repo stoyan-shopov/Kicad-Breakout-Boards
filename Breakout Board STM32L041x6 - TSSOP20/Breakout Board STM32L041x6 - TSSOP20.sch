@@ -798,8 +798,16 @@ Wire Notes Line
 	8750 2100 8150 2100
 Wire Notes Line
 	8150 2100 8150 1500
-NoConn ~ 8550 1750
-NoConn ~ 8550 1850
-NoConn ~ 8550 1950
-NoConn ~ 8550 2050
+NoConn ~ 8600 1750
+NoConn ~ 8600 1850
+NoConn ~ 8600 1950
+NoConn ~ 8600 2050
+Wire Wire Line
+	8550 2050 8600 2050
+Wire Wire Line
+	8600 1950 8550 1950
+Wire Wire Line
+	8600 1850 8550 1850
+Wire Wire Line
+	8600 1750 8550 1750
 $EndSCHEMATC

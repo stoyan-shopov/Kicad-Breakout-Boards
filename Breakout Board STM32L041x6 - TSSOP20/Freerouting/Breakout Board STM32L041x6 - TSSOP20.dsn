@@ -56,7 +56,7 @@
       (place D1 122370 -74142.5 front 270 (PN "led - power"))
     )
     (component LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder::1
-      (place D2 137870 -82642.5 front 90 (PN "user led"))
+      (place D2 137870 -82642.5 front 90 (PN goldstar))
     )
     (component "Diode_SMD:D_SOD-123"
       (place D3 140620 -78730 back 90 (PN Dvddext))
@@ -73,12 +73,16 @@
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:Tactile Switch TS-064 - Comet"
       (place SW1 131870 -63880 front 90 (PN "reset switch"))
-      (place SW2 130120 -85630 front 90 (PN "user switch"))
+      (place SW2 130120 -85630 front 90 (PN "ibm m"))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round"
       (place TP1 139700 -66040 front 0 (PN swdio))
       (place TP2 139700 -63500 front 0 (PN swclk))
       (place TP3 140970 -86360 front 0 (PN vddext))
+      (place TP5 116840 -60960 front 0 (PN x1))
+      (place TP6 147320 -60960 front 0 (PN x2))
+      (place TP7 116840 -88900 front 0 (PN x3))
+      (place TP8 147320 -88900 front 0 (PN x4))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm square"
       (place TP4 139700 -68580 front 0 (PN gnd))
@@ -430,9 +434,6 @@
     (net "Net-(D2-Pad1)"
       (pins D2-1 R3-1)
     )
-    (net /led
-      (pins D2-2 U1-11 J2-10)
-    )
     (net /vddext
       (pins D3-2 TP3-1)
     )
@@ -450,12 +451,6 @@
     )
     (net "Net-(R5-Pad2)"
       (pins SW2-2 SW2-2@1 R5-2)
-    )
-    (net /key
-      (pins J1-8)
-    )
-    (net /switch
-      (pins U1-10 R5-1 J1-1 C8-1 R6-2)
     )
     (net /pa3
       (pins U1-9 J1-2)
@@ -484,9 +479,16 @@
     (net /pa10
       (pins U1-18 J2-3)
     )
-    (class kicad_default "" /boot /key /led /nrst /osc32in /osc32out /pa0
-      /pa1 /pa10 /pa2 /pa3 /pa6 /pa7 /pa9 /pb1 /swclk /swdio /switch /vdd
-      /vddext GND "Net-(C7-Pad1)" "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(R5-Pad2)"
+    (net "/ibm-m"
+      (pins U1-10 R5-1 J1-1 C8-1 R6-2)
+    )
+    (net /goldstar
+      (pins D2-2 U1-11 J2-10)
+    )
+    (class kicad_default "" /boot /goldstar "/ibm-m" /key /nrst /osc32in /osc32out
+      /pa0 /pa1 /pa10 /pa2 /pa3 /pa6 /pa7 /pa9 /pb1 /swclk /swdio /vdd /vddext
+      GND "Net-(C7-Pad1)" "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(R5-Pad2)"
+      "Net-(TP5-Pad1)" "Net-(TP6-Pad1)" "Net-(TP7-Pad1)" "Net-(TP8-Pad1)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
@@ -500,8 +502,7 @@
     (wire (path B.Cu 250  139870 -71630  139870 -73130)(net GND)(type protect))
     (wire (path B.Cu 250  138320 -70080  139870 -71630)(net GND)(type protect))
     (wire (path B.Cu 250  128620 -70080  138320 -70080)(net GND)(type protect))
-    (wire (path B.Cu 250  126993 -77053.4  126370 -76430)(net GND)(type protect))
-    (wire (path B.Cu 250  127320 -77380  126993 -77053.4)(net GND)(type protect))
+    (wire (path B.Cu 250  127320 -77380  126370 -76430)(net GND)(type protect))
     (wire (path B.Cu 250  137120 -77380  127320 -77380)(net GND)(type protect))
     (wire (path B.Cu 250  139870 -74630  137120 -77380)(net GND)(type protect))
     (wire (path B.Cu 250  139870 -73130  139870 -74630)(net GND)(type protect))
