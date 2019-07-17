@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\src\\Kicad-Breakout-Boards\\Breakout Board STM32L041x6 - TSSOP20\\Breakout Board STM32L041x6 - TSSOP20.sch")
-    (date "17/07/2019 18:09:56")
+    (date "17/07/2019 19:15:09")
     (tool "Eeschema (5.0.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -106,7 +106,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5D2DE877))
     (comp (ref D1)
-      (value "led power")
+      (value "led - power")
       (footprint LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder)
       (datasheet ~)
       (libsource (lib Device) (part LED_Small) (description "Light emitting diode, small symbol"))
