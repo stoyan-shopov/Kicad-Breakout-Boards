@@ -381,8 +381,8 @@ $Comp
 L Device:LED_Small D1
 U 1 1 5D2DC45D
 P 1750 3300
-F 0 "D1" V 1796 3232 50  0000 R CNN
-F 1 "ledvdd" V 1705 3232 50  0000 R CNN
+F 0 "D1" V 1700 3250 50  0000 R CNN
+F 1 "led power" V 1850 3250 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1750 3300 50  0001 C CNN
 F 3 "~" V 1750 3300 50  0001 C CNN
 	1    1750 3300
@@ -423,7 +423,7 @@ L Device:LED_Small D2
 U 1 1 5D2E1973
 P 2150 3300
 F 0 "D2" V 2196 3232 50  0000 R CNN
-F 1 "led" V 2105 3232 50  0000 R CNN
+F 1 "user led" V 2105 3232 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2150 3300 50  0001 C CNN
 F 3 "~" V 2150 3300 50  0001 C CNN
 	1    2150 3300
@@ -726,4 +726,22 @@ Wire Wire Line
 	4900 3400 4900 2900
 Wire Wire Line
 	4900 2900 4950 2900
+Text Label 4800 3700 0    50   ~ 0
+pa0
+Text Label 4800 3800 0    50   ~ 0
+pa1
+Text Label 4800 3900 0    50   ~ 0
+pa2
+Text Label 4800 4000 0    50   ~ 0
+pa3
+Text Label 6500 4000 0    50   ~ 0
+pa6
+Text Label 6500 3900 0    50   ~ 0
+pa7
+Text Label 6500 3800 0    50   ~ 0
+pb1
+Text Label 6500 3500 0    50   ~ 0
+pa9
+Text Label 6500 3400 0    50   ~ 0
+pa10
 $EndSCHEMATC

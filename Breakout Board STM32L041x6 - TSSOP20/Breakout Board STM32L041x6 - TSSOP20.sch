@@ -726,4 +726,22 @@ Wire Wire Line
 	4900 3400 4900 2900
 Wire Wire Line
 	4900 2900 4950 2900
+Text Label 4800 3700 0    50   ~ 0
+pa0
+Text Label 4800 3800 0    50   ~ 0
+pa1
+Text Label 4800 3900 0    50   ~ 0
+pa2
+Text Label 4800 4000 0    50   ~ 0
+pa3
+Text Label 6500 4000 0    50   ~ 0
+pa6
+Text Label 6500 3900 0    50   ~ 0
+pa7
+Text Label 6500 3800 0    50   ~ 0
+pb1
+Text Label 6500 3500 0    50   ~ 0
+pa9
+Text Label 6500 3400 0    50   ~ 0
+pa10
 $EndSCHEMATC
