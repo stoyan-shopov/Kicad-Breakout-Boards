@@ -72,7 +72,7 @@
       (place R6 122620 -83655 back 90 (PN 10k))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:Tactile Switch TS-064 - Comet"
-      (place SW1 131870 -63880 front 90 (PN "reset switch"))
+      (place SW1 131870 -63880 front 90 (PN "reset sw"))
       (place SW2 130120 -85630 front 90 (PN "ibm m"))
     )
     (component "Breakout Board STM32L041x6 - TSSOP20:TestPoint 2.54mm round"
@@ -485,10 +485,9 @@
     (net /goldstar
       (pins D2-2 U1-11 J2-10)
     )
-    (class kicad_default "" /boot /goldstar "/ibm-m" /key /nrst /osc32in /osc32out
+    (class kicad_default "" /boot /goldstar "/ibm-m" /nrst /osc32in /osc32out
       /pa0 /pa1 /pa10 /pa2 /pa3 /pa6 /pa7 /pa9 /pb1 /swclk /swdio /vdd /vddext
       GND "Net-(C7-Pad1)" "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(R5-Pad2)"
-      "Net-(TP5-Pad1)" "Net-(TP6-Pad1)" "Net-(TP7-Pad1)" "Net-(TP8-Pad1)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )

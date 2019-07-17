@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\src\\Kicad-Breakout-Boards\\Breakout Board STM32L041x6 - TSSOP20\\Breakout Board STM32L041x6 - TSSOP20.sch")
-    (date "17/07/2019 23:23:30")
+    (date "18/07/2019 00:06:54")
     (tool "Eeschema (5.0.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
