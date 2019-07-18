@@ -372,7 +372,7 @@ swdio
 Text Label 6500 3200 0    50   ~ 0
 swclk
 Text Label 6400 4100 0    50   ~ 0
-goldstar
+led
 Wire Wire Line
 	1800 3150 1750 3150
 Wire Wire Line
@@ -423,7 +423,7 @@ L Device:LED_Small D2
 U 1 1 5D2E1973
 P 2150 3300
 F 0 "D2" V 2196 3232 50  0000 R CNN
-F 1 "goldstar" V 2105 3232 50  0000 R CNN
+F 1 "LED" V 2105 3232 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2150 3300 50  0001 C CNN
 F 3 "~" V 2150 3300 50  0001 C CNN
 	1    2150 3300
@@ -458,7 +458,7 @@ Wire Wire Line
 Text Label 1800 3150 0    50   ~ 0
 vdd
 Text Label 2200 3150 0    50   ~ 0
-goldstar
+led
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5D2E3AC6
@@ -554,13 +554,13 @@ vdd
 Text Label 6450 4800 2    50   ~ 0
 vdda
 Text Label 4750 4100 0    50   ~ 0
-ibm-m
+switch
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5D2F6274
 P 2750 3650
 F 0 "SW2" V 2800 3900 50  0000 R CNN
-F 1 "ibm m" V 2900 3950 50  0000 R CNN
+F 1 "switch" V 2900 3950 50  0000 R CNN
 F 2 "Breakout Board STM32L041x6 - TSSOP20:Tactile Switch TS-064 - Comet" H 2750 3850 50  0001 C CNN
 F 3 "" H 2750 3850 50  0001 C CNN
 	1    2750 3650
@@ -589,7 +589,7 @@ F 3 "~" H 3000 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 3300 3450 0    50   ~ 0
-ibm-m
+switch
 $Comp
 L Device:R_Small R6
 U 1 1 5D305710
